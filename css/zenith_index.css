@@ -1,0 +1,230 @@
+body {
+  margin: 0px;
+  font-size: 12px;
+  /* background: url(../images/2.png) -280px 200px no-repeat; */
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+#head {
+  width: 1020px;
+  margin: 0px auto;
+  height: 130px;
+  /* zoom: 1; */
+}
+#head::after {
+  /* display: block; */
+  /* visibility: hidden; */
+  /* clear: both; */
+  height: 0px;
+  /* content: "."; */
+}
+.red-line {
+  background-color: rgb(232, 72, 18);
+  height: 5px;
+}
+.head-content {
+  height: 130px;
+  width: 1018px;
+  border-left: 1px solid rgb(228, 228, 228);
+  border-right: 1px solid rgb(228, 228, 228);
+}
+.logo-div {
+  float: left;
+  margin-top: 42px;
+  /* clear: left; */
+}
+.logo {
+  margin-left: 40px;
+  /* vertical-align: middle; */
+}
+.tools-div {
+  /* vertical-align: middle; */
+  /* height: 130px; */
+  /* background-color: gray; */
+  float: right;
+  padding-right: 10px;
+  color: rgb(166, 166, 166);
+}
+
+.tools-icon li {
+  margin-left: 4px;
+  float: left;
+}
+.tools-div input {
+  border: 1px rgb(223, 223, 223) solid;
+  height: 30px;
+  width: 250px;
+  float: right;
+  padding-left: 5px;
+}
+.search {
+  position: relative;
+  right: -250px;
+  top: 45px;
+}
+#nav {
+  width: 1040px;
+  height: 50px;
+  background-color: rgb(78, 78, 78);
+  margin: 0px auto;
+}
+#nav ul {
+  margin: 0px;
+  padding: 0px;
+}
+#nav ul li {
+  /* 设置行高 */
+  line-height: 30px;
+  height: 50px;
+  font-size: 13px;
+  /* 设置字体颜色 */
+  color: white;
+  /* 设置字体粗细 */
+  font-weight: 500;
+  padding: 10px 25px;
+  border-right: 1px solid rgb(102, 102, 102);
+  /* 设置块级元素（div）水平排列 */
+  float: left;
+}
+#nav ul li i {
+  margin-right: 5px;
+}
+#nav ul li a {
+  color: white;
+  line-height: 30px;
+  height: 30px;
+  display: inline-block;
+}
+#banner {
+  width: 1020px;
+  margin: 0px auto;
+}
+
+#news .calendar {
+  width: 45px;
+}
+#news .calendar .days {
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+  background-color: rgb(242, 242, 242);
+}
+#news .calendar .month {
+  text-align: center;
+  background-color: rgb(203, 203, 203);
+}
+#footer {
+  width: 1020px;
+  margin: 0px auto;
+  height: 357px;
+}
+#footer .details {
+  background: rgb(78, 78, 78);
+  padding: 20px 30px;
+  color: rgb(202, 202, 202);
+  overflow: hidden;
+  width: 1020px;
+  height: 305px;
+}
+#footer .details a{
+  color: rgb(202, 202, 202);
+}
+#footer .details i{
+  color: white;
+}
+#footer .details .item{
+  float: left;
+  width: 220px;
+  height: 160px;
+}
+#footer .details .introduction {
+  width: 250px;
+  /* 解决文字不换行，把单词拆分 */
+  word-break: break-all;
+}
+#footer .details .introduction .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#footer .details .products item{
+  width: 200px;
+  height: 250px;
+}
+#footer .details .plant item{
+  width: 24px;
+  height: 240px;
+
+}
+#footer .copyright{
+  clear: both;
+  background: rgb(68,68,68);
+  color:rgb(150,150,150);
+  overflow: hidden;
+  height: 50px;
+}
+#footer  .copyright .content{
+  float: left;
+}
+#footer .copyright .attation{
+  float: right;
+}
+
+#footer .copyright .attation .faq li{
+  float: left;
+  line-height: 50px;
+ 
+  }
+#footer .copyright .attation .faq li a{
+  color: rgb(150,150,150);
+  padding-right: 15px ;
+  padding-left: 15px ;
+}
+#footer .copyright .attation .faq li:not(:last-child) a{
+  border-right: 1px solid;
+}
+#footer .copyright .content .text{
+  margin: 17px 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: rgb(135, 135, 135);
+  font-size: 5px;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: rgb(135, 135, 135);
+  font-size: 5px;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: rgb(135, 135, 135);
+  font-size: 12px;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: rgb(135, 135, 135);
+  font-size: 12px;
+}
