@@ -1,5 +1,6 @@
 body {
   margin: 0px;
+  padding:0;
   font-size: 12px;
   /* background: url(../images/2.png) -280px 200px no-repeat; */
 }
@@ -54,6 +55,7 @@ a {
   margin-left: 4px;
   float: left;
 }
+
 .tools-div input {
   border: 1px rgb(223, 223, 223) solid;
   height: 30px;
@@ -138,8 +140,8 @@ a {
 }
 #footer .details .item{
   float: left;
-  width: 220px;
-  height: 160px;
+
+
 }
 #footer .details .introduction {
   width: 250px;
@@ -156,8 +158,8 @@ a {
   height: 250px;
 }
 #footer .details .plant item{
-  width: 24px;
-  height: 240px;
+ 
+ 
 
 }
 #footer .copyright{
