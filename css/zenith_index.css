@@ -92,6 +92,12 @@ a {
   /* 设置块级元素（div）水平排列 */
   float: left;
 }
+#nav ul li{
+  position: relative;
+}
+#nav ul li:hover div{
+  display: block;
+}
 #nav ul li i {
   margin-right: 5px;
 }
@@ -100,6 +106,15 @@ a {
   line-height: 30px;
   height: 30px;
   display: inline-block;
+}
+#nav ul li div {
+  position: absolute;
+  z-index: 1;
+  left: 0px;
+  top: 100%;
+  border: 1px solid rebeccapurple;
+  display: none;
+  width: 800px;
 }
 #banner {
   width: 1020px;
@@ -135,6 +150,9 @@ a {
 #footer .details a{
   color: rgb(202, 202, 202);
 }
+#footer a:hover{
+  color: red;
+}
 #footer .details i{
   color: white;
 }
@@ -157,6 +175,8 @@ a {
   width: 200px;
   height: 250px;
 }
+
+
 #footer .details .plant item{
  
  
@@ -181,6 +201,9 @@ a {
   line-height: 50px;
  
   }
+#footer .copyright .attation .faq li a:hover{
+  color: red;
+}
 #footer .copyright .attation .faq li a{
   color: rgb(150,150,150);
   padding-right: 15px ;
@@ -192,6 +215,7 @@ a {
 #footer .copyright .content .text{
   margin: 17px 25px;
 }
+
 
 
 
