@@ -97,6 +97,8 @@ a {
 }
 #nav ul li:hover div{
   display: block;
+  background-color: rgb(255,255,255)
+  
 }
 #nav ul li i {
   margin-right: 5px;
@@ -112,28 +114,97 @@ a {
   z-index: 1;
   left: 0px;
   top: 100%;
-  border: 1px solid rebeccapurple;
-  display: none;
-  width: 800px;
+  border: 1px solid rgb(223,223,223);
+  display: block;
+  width: 140px;
+  height: 251px;
+ 
 }
+.about-list li{
+  padding: 0px !important;
+  padding:10px 10px !important;
+}
+#nav ul li div ul li{
+  z-index:2;
+  color: rgb(54,54,54);
+  line-height: 38px;
+  border: 1px solid rgb(229,229,229);
+  border-right: none;
+  width: 140px;
+}
+
 #banner {
   width: 1020px;
   margin: 0px auto;
 }
-
-#news .calendar {
+/* #news{
+  width: 1020px;
+  height: 304px;
+  margin: 0px auto;
+  border: 1px solid rgb(231,231,231)
+}
+#news .first{
+  width: 230px;
+  float: left;
+}
+#news .second{
+  width: 230px;
+  float: left;
+}
+#news .three{
+  width: 500px;
+  float: left; */
+#news  .calendar {
   width: 45px;
 }
-#news .calendar .days {
+#news  .calendar .days {
   text-align: center;
   line-height: 40px;
   height: 40px;
   background-color: rgb(242, 242, 242);
 }
-#news .calendar .month {
+#news .recent .calendar .month {
   text-align: center;
   background-color: rgb(203, 203, 203);
 }
+
+#introduction {
+  height: 225px;
+  width: 1020px;
+  margin: 0 auto;
+  clear: both;
+  border: 1px solid rgb(231, 231, 231);
+}
+
+
+#introduction .ore{
+  float: left;
+  width: 225px;
+
+}
+#introduction .ultrafine{
+  float: left;
+  width: 320px;
+}
+#introduction .vertical{
+  float: left;
+  width: 320px;
+}
+
+#crusher {
+  height: 217px;
+  width: 1020px;
+  margin: 0 auto;
+  clear: both;
+  border: 1px solid rgb(231, 231, 231);
+}
+#crusher .sorts{
+  width: 270px;
+  margin: o auto;
+  float: left;
+}
+
+
 #footer {
   width: 1020px;
   margin: 0px auto;
