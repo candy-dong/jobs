@@ -89,16 +89,20 @@ a {
   font-weight: 500;
   padding: 10px 25px;
   border-right: 1px solid rgb(102, 102, 102);
-  /* 设置块级元素（div）水平排列 */
   float: left;
-}
-#nav ul li{
   position: relative;
 }
+/* #nav ul .about-list,.products-list:hover{
+  color: rgb(232,72,18);
+} */
 #nav ul li:hover div{
   display: block;
   background-color: rgb(255,255,255);
 }
+/* #nav ul li .products-list{
+  width:140px;
+  height: 185px;
+} */
 #nav ul li i {
   margin-right: 5px;
 }
@@ -115,23 +119,34 @@ a {
   top: 100%;
   border: 1px solid rgb(223,223,223);
   display: none;
-  width: 140px;
-  height: 251px;
- 
 }
-.about-list li{
-  padding: 0px !important;
-  padding:10px 10px !important;
-}
+
 #nav ul li div ul li{
   z-index:2;
   color: rgb(54,54,54);
   line-height: 38px;
   border: 1px solid rgb(229,229,229);
   border-right: none;
-  width: 140px;
+  padding:10px 10px !important;
+}
+.about-list li{ 
+  /* padding:10px 10px !important; */
+  width: 144px;
+  height: 251px;
+}
+#nav ul li .products-list{
+  width: 802px;
+  height: 292px;
+}
+#nav ul li .products-list .top{
+  float: left;
+  height: 34px;
 }
 
+#crusher .equipment>div{
+float: left;
+width: 30%;
+}
 #banner {
   width: 1020px;
   margin: 0px auto;
@@ -150,16 +165,20 @@ a {
 }
 #news .first{
   width: 50%;
+  padding-left: 40px;
+  padding-top: 40px;
 }
 #news .first>div{
   float: left;
   width: 50%;
+  padding:
 }
 #news .first>div>div{
   float: left;
 }
 #news .first .day-news{
   width: 70%;
+  padding-left: 15px;
 }
 #news .first .read-more{
   color: red;
@@ -170,6 +189,7 @@ a {
 
 #news  .calendar {
   width: 45px;
+ 
 }
 
 #news .calendar .days {
@@ -185,25 +205,36 @@ a {
 
 #introduction {
   height: 225px;
-  width: 1020px;
+  width: 1020px!important;
   margin: 0 auto;
   clear: both;
   border: 1px solid rgb(231, 231, 231);
+  padding-top: 50px;
+  padding-left: 40px;
+  width: 100%;
 }
+/* #introduction span{
+  display: inline;
+} */
 
+
+#introduction>div{
+  flex:1;
+  /* text-align: center; */
+}
 
 #introduction .ore{
   float: left;
-  width: 225px;
+  width: 33.3%;
 
 }
 #introduction .ultrafine{
   float: left;
-  width: 320px;
+  width: 33.3%;
 }
 #introduction .vertical{
   float: left;
-  width: 320px;
+  width: 33.3%;
 }
 
 #crusher {
@@ -288,7 +319,7 @@ a {
  
   }
 #footer .copyright .attation .faq li a:hover{
-  color: red;
+  color: blue;
 }
 #footer .copyright .attation .faq li a{
   color: rgb(150,150,150);
