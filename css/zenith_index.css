@@ -1,3 +1,15 @@
+/*所有元素设置*/
+* {
+  /*设置默认margin 为0*/
+  margin: 0;
+  /*设置默认padding 为0*/
+  padding: 0;
+  /*设置所有盒子元素 的宽度高度为真正的盒子宽度高度(不设置的话盒子宽度=边框+padding+宽度)*/
+  box-sizing: border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+  -webkit-box-sizing:border-box; /* Safari Google*/
+}
+
 body {
   margin: 0px;
   padding:0;
@@ -78,7 +90,7 @@ a {
   margin: 0px;
   padding: 0px;
 }
-#nav ul li {
+#nav>ul>li {
   /* 设置行高 */
   line-height: 30px;
   height: 50px;
@@ -95,7 +107,10 @@ a {
 /* #nav ul .about-list,.products-list:hover{
   color: rgb(232,72,18);
 } */
-#nav ul li:hover div{
+#nav>ul>li:hover{
+  background: red;
+}
+#nav ul li:hover>div{
   display: block;
   background-color: rgb(255,255,255);
 }
@@ -112,35 +127,53 @@ a {
   height: 30px;
   display: inline-block;
 }
-#nav ul li div {
+#nav ul li>div {
+  padding: 5px 20px;
   position: absolute;
   z-index: 1;
   left: 0px;
   top: 100%;
   border: 1px solid rgb(223,223,223);
   display: none;
+  color: rgb(54,54,54);
 }
 
+#nav ul li div ul{
+  float: left;
+  width: 25%;
+}
 #nav ul li div ul li{
   z-index:2;
   color: rgb(54,54,54);
-  line-height: 38px;
-  border: 1px solid rgb(229,229,229);
-  border-right: none;
-  padding:10px 10px !important;
+  line-height: 10px;
+/*  border: 1px solid rgb(229,229,229);
+  border-right: none;*/
+  padding:10px 0px;
 }
-.about-list li{ 
-  /* padding:10px 10px !important; */
-  width: 144px;
-  height: 251px;
-}
+
 #nav ul li .products-list{
-  width: 802px;
-  height: 292px;
+  width: 800px;
+}
+#nav ul li .products-list ul li:first-child{
+  font-weight: bold;
+  /*color: red;*/
+  font-size: 14px;
+
 }
 #nav ul li .products-list .top{
-  float: left;
   height: 34px;
+  border-bottom: solid 1px gray;
+  margin-bottom: 7px;
+}
+
+#nav ul li .about-list{
+  padding: 0px 0px ;
+}
+.about-list li{ 
+  padding:10px 10px !important; 
+  width: 140px;
+  border-bottom: 1px solid #333333;
+  /*height: 251px;*/
 }
 
 #crusher .equipment>div{
@@ -150,6 +183,24 @@ width: 30%;
 #banner {
   width: 1020px;
   margin: 0px auto;
+}
+.carousel-indicators{
+  list-style: none;
+  height: 30px;
+  /*display: block;*/
+  width: 50px;
+  margin:0px auto;
+}
+.carousel-indicators .active{
+  background: gray;
+}
+.carousel-indicators li{
+  float: left;
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin:1px;
 }
 
 #news{
@@ -344,8 +395,19 @@ width: 30%;
 
 
 
+#triangle-topleft{
+  width: 0px;
+  height: 0px;
+  border-top: 20px solid red; 
+  border-right: 20px solid transparent; 
+}
 
-
+#triangle-lefttop{
+  width: 0px;
+  height: 0px;
+  border-top: 20px solid red; 
+  border-left: 20px solid transparent; 
+}
 
 
 
