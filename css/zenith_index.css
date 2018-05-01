@@ -14,6 +14,7 @@ body {
   margin: 0px;
   padding:0;
   font-size: 12px;
+  font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","WenQuanYi Micro Hei",sans-serif;
   /* background: url(../images/2.png) -280px 200px no-repeat; */
 }
 ul {
@@ -85,6 +86,7 @@ a {
   height: 50px;
   background-color: rgb(78, 78, 78);
   margin: 0px auto;
+  position: relative;
 }
 #nav ul {
   margin: 0px;
@@ -169,6 +171,7 @@ a {
 #nav ul li .about-list{
   padding: 0px 0px ;
 }
+
 .about-list li{ 
   padding:10px 10px !important; 
   width: 140px;
@@ -176,10 +179,6 @@ a {
   /*height: 251px;*/
 }
 
-#crusher .equipment>div{
-float: left;
-width: 30%;
-}
 #banner {
   width: 1020px;
   margin: 0px auto;
@@ -189,7 +188,7 @@ width: 30%;
   height: 30px;
   /*display: block;*/
   width: 50px;
-  margin:0px auto;
+  margin:5px auto;
 }
 .carousel-indicators .active{
   background: gray;
@@ -205,9 +204,15 @@ width: 30%;
 
 #news{
   width: 1020px;
-  height: 304px;
+  /* height: 304px; */
   margin: 0px auto;
-  border: 1px solid rgb(231,231,231)
+  border: 1px solid rgb(231,231,231);
+  padding: 20px;
+  overflow: hidden;
+  color: #A4A4A4;
+}
+#news h3{
+  color: #838383;
 }
 
 #news>div{
@@ -216,13 +221,13 @@ width: 30%;
 }
 #news .first{
   width: 50%;
-  padding-left: 40px;
-  padding-top: 40px;
+}
+#news h3{
+  padding: 20px;
 }
 #news .first>div{
   float: left;
   width: 50%;
-  padding:
 }
 #news .first>div>div{
   float: left;
@@ -231,11 +236,16 @@ width: 30%;
   width: 70%;
   padding-left: 15px;
 }
-#news .first .read-more{
-  color: red;
+.read-more{
+  color:#F08663;
+  padding: 5px;
 }
 #news .second{
   width: 49%;
+}
+#news .second p{
+  background: #F3F1F1;
+  padding: 20px;
 }
 
 #news  .calendar {
@@ -255,14 +265,18 @@ width: 30%;
 }
 
 #introduction {
-  height: 225px;
+  /* height: 225px; */
   width: 1020px!important;
   margin: 0 auto;
   clear: both;
-  border: 1px solid rgb(231, 231, 231);
-  padding-top: 50px;
+  /* border: 1px solid rgb(231, 231, 231); */
+  border-left: 1px solid rgb(231, 231, 231);
+  border-right: 1px solid rgb(231, 231, 231);
+  border-bottom: 1px solid rgb(231, 231, 231);
+  padding: 20px;
   padding-left: 40px;
   width: 100%;
+  overflow: hidden;
 }
 /* #introduction span{
   display: inline;
@@ -289,18 +303,36 @@ width: 30%;
 }
 
 #crusher {
-  height: 217px;
+  /* height: 217px; */
   width: 1020px;
   margin: 0 auto;
   clear: both;
   border: 1px solid rgb(231, 231, 231);
+  padding: 20px;
+  overflow: hidden;
 }
 #crusher .sorts{
-  width: 270px;
+  width: 25%;
   margin: o auto;
   float: left;
 }
-
+#crusher .pew{
+  width: 75%;
+  float: left;
+}
+#crusher .pew>div{
+  float: left;
+  width: 30%;
+  margin: 10px;
+}
+#crusher .pew>div>div{
+  border-top: 5px solid #999999;
+  border-bottom: 1px solid #999999;
+  border-left: 1px solid #999999;
+  border-right: 1px solid #999999;
+  text-align: center;
+  padding: 10px;
+}
 
 #footer {
   width: 1020px;
@@ -313,10 +345,10 @@ width: 30%;
   color: rgb(202, 202, 202);
   overflow: hidden;
   width: 1020px;
-  height: 305px;
+  /* height: 305px; */
 }
 #footer .details a{
-  color: rgb(202, 202, 202);
+  color: #C5C5C5;
 }
 #footer a:hover{
   color: red;
@@ -326,7 +358,7 @@ width: 30%;
 }
 #footer .details .item{
   float: left;
-
+  padding: 10px;
 
 }
 #footer .details .introduction {
@@ -398,15 +430,21 @@ width: 30%;
 #triangle-topleft{
   width: 0px;
   height: 0px;
-  border-top: 20px solid red; 
-  border-right: 20px solid transparent; 
+  border-top: 11px solid red; 
+  border-right: 11px solid transparent; 
+  position: absolute;
+  right: 0px;
+  top:100%;
 }
 
 #triangle-lefttop{
   width: 0px;
   height: 0px;
-  border-top: 20px solid red; 
-  border-left: 20px solid transparent; 
+  border-top: 11px solid red; 
+  border-left: 11px solid transparent;
+  position: absolute;
+  left: 0px;
+  top:100%;
 }
 
 
