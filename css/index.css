@@ -130,10 +130,6 @@ letter-spacing: -0.15px;
   margin: 0px;
   padding: 0px;
   width: 1000px;
-  /* 不要乱设高度 */
-  /* 不要乱设高度 */
-  /* 不要乱设高度 */
-  /* height: 48px; */
 }
 #nav>ul>li {
   /* 设置行高 */
@@ -144,43 +140,62 @@ letter-spacing: -0.15px;
   color: white;
   /* 设置字体粗细 */
   /* font-weight: 500; */
-  padding: 10px 20px;
+  /* padding: 10px 22px; */
   border-right: 1px solid rgb(102, 102, 102);
   float: left;
   position: relative;
 }
-/* #nav ul .about-list,.products-list:hover{
+#nav ul .about-list,.products-list:hover{
   color: rgb(232,72,18);
-} */
-/* #nav ul .fa-home{
+  /* display: block;
+  background-color: white; */
+}
+#nav ul .products-list{
+  /* color: rgb(232,72,18); */
+  display: block;
+  background-color: white;
+}
+#nav ul .first{
+  width: 104px;
   padding: 10px 22px;
 } 
-#nav ul .fa-briefcase{
-  padding: 10px 31px;
+#nav ul .second{
+  width: 122px;
+  padding: 10px 22px;
+  /* padding: 10px 31px; */
 }
-#nav ul .fa-info-circle,.fa-file{
-  padding: 10px 32px;
+ #nav ul .third,.fourth{
+  /* padding: 10px 32px; */
+ width: 124px;
+ padding: 10px 23px;
 }
-#nav ul .fa-envelope{
-  padding: 10px 35px;
+/* #nav ul .fourth{
+  width: 130px; */
+  /* padding: 10px 35px; */
+#nav ul .fifth{
+  width: 132px;
+  padding: 10px 22px;
+  /* padding: 10px 24px; */
+} 
+#nav ul .sixth{
+  /* padding: 10px 24px; */
+  width: 110px;
+  padding: 10px 22px;
 }
-#nav ul .fa-shopping-cart{
-  padding: 10px 24px;
-} */
-
 #nav>ul>li:hover{
   background: red;
 }
 #nav ul li:hover>div{
   display: block;
   background-color: rgb(255,255,255);
+
 }
 /* #nav ul li .products-list{
   width:140px;
   height: 185px;
 } */
 #nav ul li i {
-  margin-right: 5px;
+  margin-right: 3px;
   font-size: 10px;
 }
 #nav ul li a {
@@ -211,7 +226,7 @@ letter-spacing: -0.15px;
 }
 
 #nav ul li>div {
-  padding: 5px 20px;
+  padding: 5px 22px;
   position: absolute;
   z-index: 1;
   left: 0px;
@@ -228,10 +243,12 @@ letter-spacing: -0.15px;
 #nav ul li div ul li{
   z-index:2;
   color: rgb(54,54,54);
-  line-height: 10px;
+  line-height: 16px;
 /*  border: 1px solid rgb(229,229,229);
   border-right: none;*/
   padding:10px 0px;
+  letter-spacing: -0.1px;
+  font-size: 15px;
 }
 
 #nav ul li .products-list{
@@ -254,9 +271,10 @@ letter-spacing: -0.15px;
 }
 
 .about-list li{ 
-  padding:10px 10px !important; 
+  padding:10px 11px !important; 
   width: 140px;
-  border-bottom: 1px solid #333333;
+  border-bottom: 1px solid #e5e5e5;
+  letter-spacing: -0.15px;
   /*height: 251px;*/
 }
 
