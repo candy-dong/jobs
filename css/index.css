@@ -1,18 +1,24 @@
 * {
   margin: 0;
   padding: 0;
-  /*设置所有盒子元素的宽度高度为真正的盒子宽度高度(不设置的话盒子宽度=边框+padding+宽度)*/
+  font-size: 16px;
   box-sizing: border-box;
   -moz-box-sizing:border-box; /* Firefox */
   -webkit-box-sizing:border-box; /* Safari Google*/
-  font-size: 16px;
 }
-
 body {
-  font-size: 12px;
   font-family: Calibri;
+  margin: auto;
   /* font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","WenQuanYi Micro Hei",sans-serif; */
   /* background: url(../images/2.png) -280px 200px no-repeat; */
+}
+#head,#banner,#introduction,#crusher,#news,#footer {
+  width: 1020px;
+  margin: auto;
+}
+#nav {
+  width: 1040px;
+  margin: auto;
 }
 ul, li {
   list-style: none;
@@ -20,18 +26,16 @@ ul, li {
 a {
   text-decoration: none;
 }
+a:hover{
+color: #e84812;
+}
+
 #head {
-  width: 1020px;
-  margin: 0 auto;
   height: 130px;
   border-top: solid 5px rgb(232, 72, 18);
 }
-#head::after {
-  height: 0px;
-}
 .head-content {
   height: 134px;
-  width: 1020px;
   border-left: 1px solid rgb(228, 228, 228);
   border-right: 1px solid rgb(228, 228, 228);
 }
@@ -49,7 +53,6 @@ color: #878787;
 margin-top: -34px;
 margin-left: 261px;
 letter-spacing: -0.15px;
-
 }
 .tools-div {
   float: right;
@@ -57,7 +60,6 @@ letter-spacing: -0.15px;
   color: rgb(166, 166, 166);
 }
  .tools-icon {
-  clear: both;
   padding-left: 120px;
   margin-top: 3px;
   margin-right: 3px;
@@ -115,7 +117,7 @@ letter-spacing: -0.15px;
 .products-list .feeding {
   font-weight: bold;
 }
-#nav ul .first {
+#nav ul .first,.fifth,.sixth {
   padding: 10px 22px;
 } 
 #nav ul .second {
@@ -124,19 +126,12 @@ letter-spacing: -0.15px;
  #nav ul .third,.fourth {
  padding: 10px 25px;
 }
-#nav ul .fifth {
-  padding: 10px 22px;
-} 
-#nav ul .sixth {
-  padding: 10px 22px;
-}
 #nav>ul>li:hover {
   background: #e84812;
 }
 #nav ul li:hover>div {
   display: block;
   background-color: rgb(255,255,255);
-
 }
 #nav ul li i {
   margin-right: 3px;
@@ -186,8 +181,6 @@ letter-spacing: -0.15px;
   z-index:2;
   color: rgb(54,54,54);
   line-height: 15px;
-/*  border: 1px solid rgb(229,229,229);
-  border-right: none;*/
   padding:5px 0px;
   letter-spacing: -0.1px;
   font-size: 15px;
@@ -200,7 +193,6 @@ letter-spacing: -0.15px;
 }
 #nav ul li .products-list ul li:first-child {
   font-weight: bold;
-  /*color: red;*/
   font-size: 14px;
 
 }
@@ -208,11 +200,14 @@ letter-spacing: -0.15px;
   height: 35px;
   border-bottom: solid 1px #dfdfdf;
   margin-bottom: 7px;
-  padding-top: 
 }
 
 #nav ul li .about-list {
   padding: 0px 0px ;
+}
+#banner .photo{
+  width: 1020px;
+  height: 448px;
 }
 .about-list li { 
   padding: 10px 11px !important; 
@@ -220,13 +215,7 @@ letter-spacing: -0.15px;
   border-bottom: 1px solid #e5e5e5;
   letter-spacing: -0.15px;
 }
-
-#banner {
-  width: 1020px;
-  margin: 0px auto;
-}
 .carousel-indicators {
-  /* list-style: none; */
   height: 30px;
   width: 50px;
   margin:5px auto;
@@ -244,8 +233,6 @@ letter-spacing: -0.15px;
 }
 
 #news {
-  width: 1020px;
-  margin: 0px auto;
   border: 1px solid rgb(231,231,231);
   padding: 20px;
   overflow: hidden;
@@ -254,10 +241,8 @@ letter-spacing: -0.15px;
 #news h3 {
   color: #838383;
 }
-
 #news>div {
   float: left;
-
 }
 #news .first {
   width: 50%;
@@ -305,15 +290,12 @@ letter-spacing: -0.15px;
 }
 
 #introduction {
-  width: 1020px!important;
-  margin: 0 auto;
   clear: both;
   border-left: 1px solid rgb(231, 231, 231);
   border-right: 1px solid rgb(231, 231, 231);
   border-bottom: 1px solid rgb(231, 231, 231);
   padding: 20px;
   padding-left: 40px;
-  width: 100%;
   overflow: hidden;
 }
 #introduction>div {
@@ -336,9 +318,7 @@ letter-spacing: -0.15px;
 }
 
 #crusher {
-  width: 1020px;
   height: 312px;
-  margin: 0 auto;
   clear: both;
   border-left: 1px solid rgb(231, 231, 231);
   border-right: 1px solid rgb(231, 231, 231);
@@ -380,8 +360,6 @@ letter-spacing: -0.15px;
 }
 
 #footer {
-  width: 1020px;
-  margin: 0px auto;
   height: 357px;
 }
 #footer .details {
@@ -389,14 +367,16 @@ letter-spacing: -0.15px;
   padding: 20px 30px;
   color: rgb(202, 202, 202);
   overflow: hidden;
-  width: 1020px;
+
+
+
 }
 #footer .details a {
   color: #C5C5C5;
 }
-#footer a:hover {
+/* #footer a:hover {
   color: red;
-}
+} */
 #footer .details i {
   color: white;
 }
@@ -431,17 +411,17 @@ letter-spacing: -0.15px;
 #footer .copyright .attation {
   float: right;
 }
-
 #footer .copyright .attation .faq li {
   float: left;
   line-height: 50px;
+  padding: 0px 5px;
   }
-#footer .copyright .attation .faq li a:hover {
-  color: blue;
-}
+/* #footer .copyright .attation .faq li a:hover {
+  color: blue; */
+/* } */
 #footer .copyright .attation .faq li a {
   color: rgb(150,150,150);
-  padding-right: 0px 15px ;
+  padding-right: 15px ;
 }
 #footer .copyright .attation .faq li:not(:last-child) a {
   border-right: 1px solid;

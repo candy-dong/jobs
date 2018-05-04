@@ -137,5 +137,13 @@ textarea:-ms-input-placeholder {
   -moz-box-sizing:border-box; /* Firefox */
   -webkit-box-sizing:border-box; /* Safari Google*/ -->
 
+CSS中存在一些比较特殊的属性，称之为伪类，它们之中最常用的就是定义链接的伪:link，:visited，:hover，:active等。
+    除了它们，还有一些不被常使用的伪类，有:focus，:first-child，:lang等。
+    而且CSS里不光有伪类，还有伪元素，比如：:first-letter，:first-line，:before和:after。
+    ﻿本文中其它伪元素暂且不表，单说:after伪元素。
+after顾名思义是在元素后面的意思，实质是在元素之后添加内容。
+    这个伪元素允许制作人员在元素内容的最后面插入生成内容，需要和content属性一起使用，设置在对象后发生的内容。默认地，这个伪元素是inline行内元素，不过可以使用属性 display 改变这一点。  
+
+    
   .tools-div {
   /* vertical-align: middle; */
