@@ -3,8 +3,8 @@
   padding: 0;
   font-size: 16px;
   box-sizing: border-box;
-  -moz-box-sizing:border-box; /* Firefox */
-  -webkit-box-sizing:border-box; /* Safari Google*/
+  -moz-box-sizing: border-box; /* Firefox */
+  -webkit-box-sizing: border-box; /* Safari Google*/
 }
 body {
   font-family: Calibri;
@@ -15,9 +15,13 @@ body {
 h3 {
   font-size: 18px;
   color: #363636;
-  letter-spacing: -0.15px;
 }
-#head,#banner,#introduction,#crusher,#news,#footer {
+#head,
+#banner,
+#introduction,
+#crusher,
+#news,
+#footer {
   width: 1020px;
   margin: auto;
 }
@@ -25,15 +29,16 @@ h3 {
   width: 1040px;
   margin: auto;
 }
-ul, li {
+ul,
+li {
   list-style: none;
 }
 a {
   text-decoration: none;
   color: #b7b7b8;
 }
-a:hover{
-color: #e84812;
+a:hover {
+  color: #e84812;
 }
 
 #head {
@@ -54,18 +59,18 @@ color: #e84812;
   margin-top: 4px;
 }
 .logo-div .add {
-font-size: 14px;
-color: #878787;
-margin-top: -34px;
-margin-left: 261px;
-letter-spacing: -0.15px;
+  font-size: 14px;
+  color: #878787;
+  margin-top: -34px;
+  margin-left: 261px;
+  letter-spacing: -0.15px;
 }
 .tools-div {
   float: right;
   padding-right: 38px;
   color: rgb(166, 166, 166);
 }
- .tools-icon {
+.tools-icon {
   padding-left: 120px;
   margin-top: 3px;
   margin-right: 3px;
@@ -97,7 +102,7 @@ letter-spacing: -0.15px;
 #nav {
   width: 1040px;
   height: 48px;
-  font-size:14px;
+  font-size: 14px;
   letter-spacing: -0.15px;
   background-color: #4e4e4e;
   margin: 0 auto;
@@ -108,7 +113,7 @@ letter-spacing: -0.15px;
   margin: 0;
   padding: 0;
 }
-#nav>ul>li {
+#nav > ul > li {
   line-height: 30px;
   height: 48px;
   color: white;
@@ -117,27 +122,31 @@ letter-spacing: -0.15px;
   position: relative;
 }
 
-#nav ul .about-list,.products-list:hover {
-  color: rgb(232,72,18);
+#nav ul .about-list,
+.products-list:hover {
+  color: rgb(232, 72, 18);
 }
 .products-list .feeding {
   font-weight: bold;
 }
-#nav ul .first,.fifth,.sixth {
+#nav ul .first,
+.fifth,
+.sixth {
   padding: 10px 22px;
-} 
+}
 #nav ul .second {
   padding: 10px 24px;
 }
- #nav ul .third,.fourth {
- padding: 10px 25px;
+#nav ul .third,
+.fourth {
+  padding: 10px 25px;
 }
-#nav>ul>li:hover {
+#nav > ul > li:hover {
   background: #e84812;
 }
-#nav ul li:hover>div {
+#nav ul li:hover > div {
   display: block;
-  background-color: rgb(255,255,255);
+  background-color: rgb(255, 255, 255);
 }
 #nav ul li i {
   margin-right: 3px;
@@ -151,41 +160,41 @@ letter-spacing: -0.15px;
 #triangle-topright {
   width: 0px;
   height: 0px;
-  border-top: 11px solid #b2b2b2; 
-  border-right: 11px solid transparent; 
+  border-top: 11px solid #b2b2b2;
+  border-right: 11px solid transparent;
   position: absolute;
   right: 0px;
-  top:100%;
+  top: 100%;
 }
 
 #triangle-topleft {
   width: 0px;
   height: 0px;
-  border-top: 11px solid #b2b2b2; 
+  border-top: 11px solid #b2b2b2;
   border-left: 11px solid transparent;
   position: absolute;
   left: 0px;
-  top:100%;
+  top: 100%;
 }
-#nav ul li>div {
+#nav ul li > div {
   padding: 0px 20px;
   position: absolute;
   z-index: 1;
   left: 0px;
   top: 100%;
-  border: 1px solid rgb(223,223,223);
+  border: 1px solid rgb(223, 223, 223);
   display: none;
-  color: rgb(54,54,54);
+  color: rgb(54, 54, 54);
 }
 #nav ul li div ul {
   float: left;
   width: 25%;
 }
 #nav ul li div ul li {
-  z-index:2;
-  color: rgb(54,54,54);
+  z-index: 2;
+  color: rgb(54, 54, 54);
   line-height: 15px;
-  padding:5px 0px;
+  padding: 5px 0px;
   letter-spacing: -0.1px;
   font-size: 15px;
 }
@@ -198,7 +207,6 @@ letter-spacing: -0.15px;
 #nav ul li .products-list ul li:first-child {
   font-weight: bold;
   font-size: 14px;
-
 }
 #nav ul li .products-list .top {
   height: 35px;
@@ -207,14 +215,14 @@ letter-spacing: -0.15px;
 }
 
 #nav ul li .about-list {
-  padding: 0px 0px ;
+  padding: 0px 0px;
 }
-#banner .photo{
+#banner .photo {
   width: 1020px;
   height: 448px;
 }
-.about-list li { 
-  padding: 10px 11px !important; 
+.about-list li {
+  padding: 10px 11px !important;
   width: 140px;
   border-bottom: 1px solid #e5e5e5;
   letter-spacing: -0.15px;
@@ -222,7 +230,7 @@ letter-spacing: -0.15px;
 .carousel-indicators {
   height: 30px;
   width: 50px;
-  margin:5px auto;
+  margin: 5px auto;
 }
 .carousel-indicators .active {
   background: #161616;
@@ -231,32 +239,32 @@ letter-spacing: -0.15px;
   float: left;
   width: 10px;
   height: 10px;
-  background-color:#7f7f7f;
+  background-color: #7f7f7f;
   border-radius: 10px;
-  margin:1px;
+  margin: 1px;
 }
 
 #news {
-  border: 1px solid rgb(231,231,231);
+  border: 1px solid rgb(231, 231, 231);
   padding: 18px 20px;
   overflow: hidden;
-  color: #A4A4A4;
+  color: #a4a4a4;
 }
 #news h3 {
   color: #838383;
   padding: 15px 20px;
 }
-#news>div {
+#news > div {
   float: left;
 }
 #news .first {
   width: 50%;
 }
-#news .first>div {
+#news .first > div {
   float: left;
   width: 50%;
 }
-#news .first>div>div {
+#news .first > div > div {
   float: left;
 }
 #news .first .day-news {
@@ -264,21 +272,21 @@ letter-spacing: -0.15px;
   padding-left: 15px;
 }
 #news a {
-  color:#F08663;
+  color: #f08663;
   padding: 5px;
 }
 #news .first i {
-  color:#F08663;
+  color: #f08663;
   font-size: 11px;
 }
 #news .second {
   width: 49%;
 }
 #news .second p {
-  background: #F3F1F1;
+  background: #f3f1f1;
   padding: 20px;
 }
-#news  .calendar {
+#news .calendar {
   width: 45px;
   height: 64px;
   margin-left: 20px;
@@ -299,13 +307,17 @@ letter-spacing: -0.15px;
   border-left: 1px solid rgb(231, 231, 231);
   border-right: 1px solid rgb(231, 231, 231);
   border-bottom: 1px solid rgb(231, 231, 231);
-  padding: 30px 30px 50px 40px;
+  padding: 30px 30px 45px 40px;
   overflow: hidden;
 }
-#introduction>div {
-  flex:1;
+#introduction > div {
+  flex: 1;
   width: 33%;
   float: left;
+}
+#introduction .vertical {
+  width: 32%;
+  padding-left: 7px;
 }
 #introduction a {
   color: #e84811;
@@ -320,71 +332,87 @@ letter-spacing: -0.15px;
 }
 #introduction p {
   line-height: 22px;
+  padding-bottom: 3px;
 }
 #introduction .ore {
   letter-spacing: -0.4px;
   margin-right: 8px;
 }
 .ultrafine p {
-    font-size: 15px;
-    padding-right: 10px;
+  font-size: 15px;
+  padding-right: 10px;
 }
-.vertical p{
-    font-size: 15px;
+.vertical p {
+  font-size: 15px;
 }
 #introduction .ultrafine {
-  margin-right: 1px;
+  margin-right: 6Spx;
 }
 
-
 #crusher {
-  height: 312px;
+  height: 310px;
   clear: both;
   border-left: 1px solid rgb(231, 231, 231);
   border-right: 1px solid rgb(231, 231, 231);
   padding: 32px 0px 28px;
-  overflow: hidden;
-  font-size: 16px ;
 }
-#crusher h {
-  color: #363636
+#crusher p {
+  color: #878787;
+}
+#crusher > .pew div:hover img {
+  opacity: 0.5;
+}
+#crusher > .pew div:hover div {
+  border-top: 5px solid #e84812;
 }
 #crusher .sorts {
-  width: 25%;
-  padding: 0px 24px 0px 40px;
+  width: 27.5%;
+  padding: 0px 20px 0px 40px;
   float: left;
-  word-break: break-all;
 }
-#crusher .sorts h3{
-  margin-bottom: 10px;
+#crusher .sorts p {
+  font-size: 15px;
+  line-height: 21px;
+}
+#crusher .sorts h3 {
+  margin-bottom: 9px;
 }
 #crusher .pew {
-  width: 75%;
+  width: 72%;
   float: left;
-  padding-top:11px;
-  padding-left: 14px;
+  padding-top: 8px;
+  padding-left: 2px;
 }
-#crusher .pew .item{
-  height:150px; 
-  width:220px;
+#crusher .pew h3{
+  font-size: 16px;
+  letter-spacing: -0.5px;
 }
-#crusher .pew>div {
+#crusher .pew p{
+  letter-spacing: -0.5px;
+}
+#crusher .pew .item {
+  height: 150px;
+  width: 220px;
+}
+#crusher .pew > div {
   float: left;
   width: 220px;
   margin-right: 20px;
 }
-#crusher .pew>div>div {
+#crusher .pew > div:hover {
+  cursor: pointer;
+}
+#crusher .pew > div > div {
   border-top: 5px solid #e4e4e4;
   border-bottom: 1px solid #e4e4e4;
   border-left: 1px solid #e4e4e4;
   border-right: 1px solid #e4e4e4;
   text-align: center;
-  padding: 10px;
-  margin-top: 2px;
+  padding: 16px;
 }
-#crusher>div>div imag:hover {
+#crusher > div > div imag:hover {
   /* border-top: 5px solid #e84812; */
-  color: #fff
+  color: #fff;
 }
 
 #footer {
@@ -395,13 +423,9 @@ letter-spacing: -0.15px;
   padding: 20px 30px;
   color: rgb(202, 202, 202);
   overflow: hidden;
-
-
-
 }
 #footer .details a {
-  color: #C5C5C5;
-  
+  color: #c5c5c5;
 }
 #footer a:hover {
   color: #e84812;
@@ -424,18 +448,18 @@ letter-spacing: -0.15px;
   font-weight: bold;
   margin-bottom: 10px;
 }
-.details .menual li:first-child{
+.details .menual li:first-child {
   font-size: 18px;
-  color:red;
+  color: red;
 }
 #footer .copyright {
   clear: both;
-  background: rgb(68,68,68);
-  color:rgb(150,150,150);
+  background: rgb(68, 68, 68);
+  color: rgb(150, 150, 150);
   overflow: hidden;
   height: 50px;
 }
-#footer  .copyright .content {
+#footer .copyright .content {
   float: left;
 }
 #footer .copyright .attation {
@@ -445,12 +469,12 @@ letter-spacing: -0.15px;
   float: left;
   line-height: 50px;
   padding: 0px 5px;
-  }
+}
 #footer .copyright .attation .faq li a:hover {
   color: #e84812;
 }
 #footer .copyright .attation .faq li a {
-  color: rgb(150,150,150);
+  color: rgb(150, 150, 150);
   padding-right: 15px;
 }
 #footer .copyright .attation .faq li:not(:last-child) a {
@@ -470,13 +494,39 @@ textarea:-moz-placeholder {
   color: rgb(135, 135, 135);
   font-size: 5px;
 }
-input:-moz-placeholder,
-textarea::-moz-placeholder {
-  color: rgb(135, 135, 135);
-  font-size: 12px;
-}
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   color: rgb(135, 135, 135);
   font-size: 12px;
 }
+
+/* /* #animation {
+  background-color: black;
+  position: absolute;
+  
+  /* 名字，持续时间，时间函数，延迟，重复次数，方向，填充模式  */
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+/* 
+#animation .carousel-inner{
+  overflow: hidden;
+}
+#animation .carousel-inner .item{
+  display: none;
+  position: relative;
+  width: 500px;
+  height: 100px;
+  background-color: violet;
+  animation: myfirst 2s;
+} */
+/* 时间动画 */
+/* @keyframes myfirst {
+  0% {
+    background-color: black;
+    left: 0px;
+  }
+
+  100% {
+    background-color: white;
+    left: -500px;
+  }
+}  */
