@@ -12,6 +12,11 @@ body {
   /* font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","WenQuanYi Micro Hei",sans-serif; */
   /* background: url(../images/2.png) -280px 200px no-repeat; */
 }
+h3 {
+  font-size: 18px;
+  color: #363636;
+  letter-spacing: -0.15px;
+}
 #head,#banner,#introduction,#crusher,#news,#footer {
   width: 1020px;
   margin: auto;
@@ -25,6 +30,7 @@ ul, li {
 }
 a {
   text-decoration: none;
+  color: #b7b7b8;
 }
 a:hover{
 color: #e84812;
@@ -139,8 +145,6 @@ letter-spacing: -0.15px;
 }
 #nav ul li a {
   color: white;
-  line-height: 30px;
-  height: 30px;
   display: inline-block;
 }
 
@@ -234,21 +238,19 @@ letter-spacing: -0.15px;
 
 #news {
   border: 1px solid rgb(231,231,231);
-  padding: 20px;
+  padding: 18px 20px;
   overflow: hidden;
   color: #A4A4A4;
 }
 #news h3 {
   color: #838383;
+  padding: 15px 20px;
 }
 #news>div {
   float: left;
 }
 #news .first {
   width: 50%;
-}
-#news h3 {
-  padding: 20px;
 }
 #news .first>div {
   float: left;
@@ -261,12 +263,13 @@ letter-spacing: -0.15px;
   width: 70%;
   padding-left: 15px;
 }
-.read-more {
+#news a {
   color:#F08663;
   padding: 5px;
 }
 #news .first i {
   color:#F08663;
+  font-size: 11px;
 }
 #news .second {
   width: 49%;
@@ -277,52 +280,69 @@ letter-spacing: -0.15px;
 }
 #news  .calendar {
   width: 45px;
+  height: 64px;
+  margin-left: 20px;
+  margin-top: 18px;
 }
 #news .calendar .days {
   text-align: center;
   line-height: 40px;
-  height: 40px;
+  height: 38px;
   background-color: rgb(242, 242, 242);
 }
 #news .calendar .month {
   text-align: center;
   background-color: rgb(203, 203, 203);
 }
-
 #introduction {
   clear: both;
   border-left: 1px solid rgb(231, 231, 231);
   border-right: 1px solid rgb(231, 231, 231);
   border-bottom: 1px solid rgb(231, 231, 231);
-  padding: 20px;
-  padding-left: 40px;
+  padding: 30px 30px 50px 40px;
   overflow: hidden;
 }
 #introduction>div {
   flex:1;
+  width: 33%;
+  float: left;
+}
+#introduction a {
+  color: #e84811;
 }
 #introduction i {
   color: #e84811;
+  font-size: 11px;
+}
+#introduction h3 {
+  padding-bottom: 15px;
+  letter-spacing: 0.2px;
+}
+#introduction p {
+  line-height: 22px;
 }
 #introduction .ore {
-  float: left;
-  width: 33.3%;
+  letter-spacing: -0.4px;
+  margin-right: 8px;
+}
+.ultrafine p {
+    font-size: 15px;
+    padding-right: 10px;
+}
+.vertical p{
+    font-size: 15px;
 }
 #introduction .ultrafine {
-  float: left;
-  width: 33.3%;
+  margin-right: 1px;
 }
-#introduction .vertical {
-  float: left;
-  width: 33.3%;
-}
+
 
 #crusher {
   height: 312px;
   clear: both;
   border-left: 1px solid rgb(231, 231, 231);
   border-right: 1px solid rgb(231, 231, 231);
-  padding: 28px 0px 28px;
+  padding: 32px 0px 28px;
   overflow: hidden;
   font-size: 16px ;
 }
@@ -331,15 +351,22 @@ letter-spacing: -0.15px;
 }
 #crusher .sorts {
   width: 25%;
-  padding: 0px 24px 0px 42px;
+  padding: 0px 24px 0px 40px;
   float: left;
   word-break: break-all;
+}
+#crusher .sorts h3{
+  margin-bottom: 10px;
 }
 #crusher .pew {
   width: 75%;
   float: left;
   padding-top:11px;
   padding-left: 14px;
+}
+#crusher .pew .item{
+  height:150px; 
+  width:220px;
 }
 #crusher .pew>div {
   float: left;
@@ -355,8 +382,9 @@ letter-spacing: -0.15px;
   padding: 10px;
   margin-top: 2px;
 }
-#crusher .pew .spe {
-  border-top: 5px solid #e84812;
+#crusher>div>div imag:hover {
+  /* border-top: 5px solid #e84812; */
+  color: #fff
 }
 
 #footer {
@@ -373,12 +401,14 @@ letter-spacing: -0.15px;
 }
 #footer .details a {
   color: #C5C5C5;
+  
 }
-/* #footer a:hover {
-  color: red;
-} */
+#footer a:hover {
+  color: #e84812;
+}
 #footer .details i {
   color: white;
+  font-size: 12px;
 }
 #footer .details .item {
   float: left;
@@ -386,18 +416,18 @@ letter-spacing: -0.15px;
 }
 #footer .details .introduction {
   width: 250px;
-  word-break: break-all;
+  /* word-break: break-all; */
+  width: 218px;
 }
 #footer .details .introduction .title {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
 }
-#footer .details .products item {
-  width: 200px;
-  height: 250px;
+.details .menual li:first-child{
+  font-size: 18px;
+  color:red;
 }
-
 #footer .copyright {
   clear: both;
   background: rgb(68,68,68);
@@ -411,17 +441,17 @@ letter-spacing: -0.15px;
 #footer .copyright .attation {
   float: right;
 }
-#footer .copyright .attation .faq li {
+.faq li {
   float: left;
   line-height: 50px;
   padding: 0px 5px;
   }
-/* #footer .copyright .attation .faq li a:hover {
-  color: blue; */
-/* } */
+#footer .copyright .attation .faq li a:hover {
+  color: #e84812;
+}
 #footer .copyright .attation .faq li a {
   color: rgb(150,150,150);
-  padding-right: 15px ;
+  padding-right: 15px;
 }
 #footer .copyright .attation .faq li:not(:last-child) a {
   border-right: 1px solid;
